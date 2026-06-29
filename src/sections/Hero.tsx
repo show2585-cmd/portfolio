@@ -1,5 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
-import { ArrowDown, Mail } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
 const container: Variants = {
@@ -66,22 +66,9 @@ export default function Hero() {
             {personalInfo.description}
           </motion.p>
 
-          <motion.div variants={item} className="flex flex-wrap gap-4 mb-14">
+          <motion.div variants={item} className="flex flex-wrap gap-4">
             <a href="#projects" className="btn-primary">
               프로젝트 보기
-            </a>
-            <a href={`mailto:${personalInfo.email}`} className="btn-outline">
-              연락하기
-            </a>
-          </motion.div>
-
-          <motion.div variants={item} className="flex items-center gap-5">
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="text-gray-500 hover:text-primary transition-colors"
-              aria-label="Email"
-            >
-              <Mail size={20} />
             </a>
           </motion.div>
         </motion.div>
