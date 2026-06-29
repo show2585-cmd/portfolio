@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
   SiHtml5, SiCss, SiJavascript, SiTypescript, SiReact,
-  SiSass, SiTailwindcss, SiGreensock, SiFramer,
+  SiSass, SiTailwindcss, SiGreensock,
   SiFigma, SiGit, SiGulp, SiVite,
   SiPhp, SiMysql,
 } from 'react-icons/si';
@@ -24,7 +24,6 @@ const iconMap: Record<string, IconEntry> = {
   'SCSS':          { icon: SiSass,        color: '#CC6699' },
   'Tailwind CSS':  { icon: SiTailwindcss, color: '#06B6D4' },
   'GSAP':          { icon: SiGreensock,   color: '#88CE02' },
-  'Framer Motion': { icon: SiFramer,      color: '#0055FF' },
   'Photoshop':     { icon: Palette,       color: '#31A8FF' },
   'Adobe XD':      { icon: PenTool,       color: '#FF61F6' },
   'Figma':         { icon: SiFigma,       color: '#F24E1E' },

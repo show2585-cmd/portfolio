@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     category: 'Styling & Animation',
-    items: ['SCSS', 'Tailwind CSS', 'GSAP', 'Framer Motion'],
+    items: ['SCSS', 'Tailwind CSS', 'GSAP'],
   },
   {
     category: 'Tools & Design',
