@@ -13,39 +13,19 @@ export const personalInfo = {
 export const skills = [
   {
     category: 'Frontend',
-    items: [
-      { name: 'HTML / CSS', level: 95 },
-      { name: 'JavaScript', level: 90 },
-      { name: 'TypeScript', level: 80 },
-      { name: 'React / React Native', level: 85 },
-    ],
+    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'React Native'],
   },
   {
     category: 'Styling & Animation',
-    items: [
-      { name: 'SCSS', level: 90 },
-      { name: 'Tailwind CSS', level: 85 },
-      { name: 'GSAP', level: 75 },
-      { name: 'Framer Motion', level: 70 },
-    ],
+    items: ['SCSS', 'Tailwind CSS', 'GSAP', 'Framer Motion'],
   },
   {
     category: 'Tools & Design',
-    items: [
-      { name: 'Photoshop', level: 85 },
-      { name: 'Adobe XD', level: 80 },
-      { name: 'Git', level: 80 },
-      { name: 'Gulp / Vite', level: 75 },
-    ],
+    items: ['Photoshop', 'Adobe XD', 'Figma', 'Git', 'Gulp', 'Vite'],
   },
   {
     category: 'AI & Automation',
-    items: [
-      { name: 'MCP 기반 AI 서비스 연동', level: 85 },
-      { name: 'AI Agent 구축', level: 80 },
-      { name: '워크플로우 자동화', level: 80 },
-      { name: 'Figma Plugin 개발', level: 75 },
-    ],
+    items: ['AI Service Integration', 'AI Agent', 'Workflow Automation', 'Figma Plugin'],
   },
 ];
 
