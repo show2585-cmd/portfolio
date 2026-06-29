@@ -16,6 +16,10 @@ export const skills = [
     items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'React Native'],
   },
   {
+    category: 'Backend',
+    items: ['PHP', 'MySQL'],
+  },
+  {
     category: 'Styling & Animation',
     items: ['SCSS', 'Tailwind CSS', 'GSAP', 'Framer Motion'],
   },

@@ -4,6 +4,7 @@ import {
   SiHtml5, SiCss, SiJavascript, SiTypescript, SiReact,
   SiSass, SiTailwindcss, SiGreensock, SiFramer,
   SiFigma, SiGit, SiGulp, SiVite,
+  SiPhp, SiMysql,
 } from 'react-icons/si';
 import { Palette, PenTool, Puzzle } from 'lucide-react';
 import { skills, aiCapabilities } from '../data/portfolio';
@@ -30,6 +31,8 @@ const iconMap: Record<string, IconEntry> = {
   'Git':           { icon: SiGit,         color: '#F05032' },
   'Gulp':          { icon: SiGulp,        color: '#CF4647' },
   'Vite':          { icon: SiVite,        color: '#646CFF' },
+  'PHP':           { icon: SiPhp,         color: '#777BB4' },
+  'MySQL':         { icon: SiMysql,       color: '#4479A1' },
 };
 
 function SkillChip({ name, delay }: { name: string; delay: number }) {
