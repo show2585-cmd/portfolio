@@ -14,8 +14,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        sans: ['GmarketSans', 'system-ui', 'sans-serif'],
+        mono: ['GmarketSans', 'monospace'],
       },
       animation: {
         'gradient-x': 'gradient-x 6s ease infinite',
