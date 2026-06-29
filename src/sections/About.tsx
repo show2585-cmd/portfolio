@@ -6,8 +6,8 @@ import { personalInfo } from '../data/portfolio';
 
 const facts = [
   { icon: MapPin, label: '위치', value: personalInfo.location },
-  { icon: Calendar, label: '경력', value: '3년차 개발자' },
-  { icon: Coffee, label: '연료', value: '아메리카노 하루 3잔' },
+  { icon: Calendar, label: '경력', value: '약 6년 · 웹디자인 · 퍼블리싱 · 프론트엔드' },
+  { icon: Coffee, label: '현재 직책', value: '대리' },
 ];
 
 export default function About() {
@@ -37,20 +37,21 @@ export default function About() {
             className="space-y-5 text-gray-400 leading-relaxed"
           >
             <p>
-              안녕하세요! 사용자 중심의 인터페이스를 만드는 것에 열정을 가진
-              프론트엔드 개발자 <span className="text-gray-100 font-semibold">{personalInfo.name}</span>입니다.
+              안녕하세요! 디자인 감각을 갖춘 프론트엔드 개발자
+              <span className="text-gray-100 font-semibold"> {personalInfo.name}</span>입니다.
             </p>
             <p>
-              React와 TypeScript를 주력으로 사용하며, 단순히 동작하는 코드가 아닌
-              <span className="text-primary font-medium"> 유지보수하기 좋고 확장 가능한 코드</span>를
-              작성하기 위해 항상 고민합니다.
+              웹디자인과 퍼블리싱으로 커리어를 시작해, 현재는
+              <span className="text-primary font-medium"> React · TypeScript · React Native</span>를
+              중심으로 웹과 앱 서비스를 개발하고 있습니다.
             </p>
             <p>
-              새로운 기술을 배우는 것을 즐기며, 팀과의 협업을 통해 더 나은
-              제품을 만들어가는 과정을 좋아합니다. 코드 리뷰와 문서화의 중요성을 잘 알고 있습니다.
+              삼성 공식 페이지(언팩 · 기획전)를 비롯한 대형 프로젝트부터 공공기관 사이트까지
+              다양한 도메인의 서비스를 경험했습니다.
             </p>
             <p>
-              개발 외에는 기술 블로그를 운영하고, 오픈소스 프로젝트에 기여하는 것을 즐깁니다.
+              디자인을 이해하는 개발자로서, 기획 의도를 정확히 구현하고
+              사용자가 불편함을 느끼지 않는 인터페이스를 만드는 것을 중요하게 생각합니다.
             </p>
           </motion.div>
 
@@ -75,7 +76,7 @@ export default function About() {
             <div className="card">
               <p className="text-xs text-gray-500 mb-3">주요 기술 스택</p>
               <div className="flex flex-wrap gap-2">
-                {['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Git'].map((tech) => (
+                {['React', 'TypeScript', 'React Native', 'JavaScript', 'HTML/CSS', 'SCSS'].map((tech) => (
                   <span key={tech} className="tag">{tech}</span>
                 ))}
               </div>

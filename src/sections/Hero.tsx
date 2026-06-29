@@ -42,7 +42,7 @@ export default function Hero() {
           )}
 
           <motion.p variants={item} className="font-mono text-primary text-sm md:text-base mb-4">
-            안녕하세요, 저는
+            웹디자인부터 프론트엔드 개발까지, 약 6년차
           </motion.p>
 
           <motion.h1
