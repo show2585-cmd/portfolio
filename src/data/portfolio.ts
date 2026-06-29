@@ -37,6 +37,7 @@ export const projects = [
     client: '현대자동차그룹',
     category: 'kiosk',
     tags: ['React', 'TypeScript'],
+    image: '/images/hyundai-robotics.jpg',
   },
   {
     id: 2,
@@ -45,6 +46,7 @@ export const projects = [
     client: '제일기획',
     category: 'web',
     tags: ['HTML', 'SCSS', 'JavaScript', 'Gulp'],
+    image: '/images/samsung-unpack.jpg',
   },
   {
     id: 3,
@@ -53,6 +55,7 @@ export const projects = [
     client: '발로란트',
     category: 'kiosk',
     tags: ['React', 'TypeScript'],
+    image: '/images/valorant-popup.jpg',
   },
   {
     id: 4,
@@ -61,6 +64,7 @@ export const projects = [
     client: 'HSAD',
     category: 'app',
     tags: ['React Native', 'TypeScript'],
+    image: '/images/hwadamsup-app.jpg',
   },
   {
     id: 5,
@@ -69,6 +73,7 @@ export const projects = [
     client: '사노피',
     category: 'kiosk',
     tags: ['React', 'TypeScript'],
+    image: '/images/sanofi-kiosk.jpg',
   },
   {
     id: 6,
@@ -77,6 +82,7 @@ export const projects = [
     client: '한국우편사업진흥원',
     category: 'kiosk',
     tags: ['React', 'TypeScript'],
+    image: '/images/fila-kiosk.jpg',
   },
   {
     id: 7,
@@ -85,6 +91,7 @@ export const projects = [
     client: '코리아그랜드세일',
     category: 'kiosk',
     tags: ['React Native'],
+    image: '/images/korea-grand-sale.jpg',
   },
   {
     id: 8,
@@ -93,6 +100,7 @@ export const projects = [
     client: 'DB김준기문화재단',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
+    image: '/images/db-foundation.jpg',
   },
   {
     id: 9,
@@ -101,6 +109,7 @@ export const projects = [
     client: '알보젠',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
+    image: '/images/alvogen.jpg',
   },
   {
     id: 10,
@@ -109,6 +118,7 @@ export const projects = [
     client: '농식품부',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+    image: '/images/nongupyon.jpg',
   },
   {
     id: 11,
@@ -117,6 +127,7 @@ export const projects = [
     client: '산업기술평가관리원',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+    image: '/images/kiat.jpg',
   },
   {
     id: 12,
@@ -125,6 +136,7 @@ export const projects = [
     client: '농식품부',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
+    image: '/images/mafra.jpg',
   },
 ];
 

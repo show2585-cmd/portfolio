@@ -41,21 +41,18 @@ function ProjectCard({ project, delay }: { project: (typeof projects)[0]; delay:
       onMouseLeave={() => setHovered(false)}
     >
       {/* 이미지 영역 */}
-      <div className={`relative h-44 bg-gradient-to-br ${style.gradient} flex items-center justify-center overflow-hidden`}>
-        {/* 배경 패턴 */}
-        <div className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '28px 28px',
-          }}
-        />
-        {/* 큰 아이콘 */}
-        <motion.div
-          animate={{ scale: hovered ? 0.8 : 1, opacity: hovered ? 0 : 1 }}
-          transition={{ duration: 0.25 }}
-        >
-          <Icon size={52} className={`${style.iconColor} opacity-30`} />
-        </motion.div>
+      <div className="relative h-44 overflow-hidden bg-dark-600">
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className={`w-full h-full bg-gradient-to-br ${style.gradient} flex items-center justify-center`}>
+            <Icon size={52} className={`${style.iconColor} opacity-30`} />
+          </div>
+        )}
         {/* 호버 시 설명 오버레이 */}
         <motion.div
           className="absolute inset-0 flex items-center justify-center px-5 bg-dark-900/80 backdrop-blur-sm"
