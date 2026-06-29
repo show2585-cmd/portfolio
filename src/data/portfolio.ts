@@ -92,23 +92,27 @@ export const projects = [
 
 export const experiences = [
   {
-    company: '(주) 테크스타트업',
-    role: '프론트엔드 개발자',
-    period: '2023.03 — 현재',
+    company: '㈜브라이트벨',
+    role: '대리',
+    period: '2023.11 — 2026.06 · 2년 8개월',
     description: [
-      'React/TypeScript 기반 SaaS 제품 개발 및 유지보수',
-      '디자인 시스템 구축으로 개발 생산성 40% 향상',
-      'Lighthouse 성능 점수 65→92 개선',
+      '프론트엔드 개발 업무 수행',
     ],
   },
   {
-    company: '(주) 웹에이전시',
-    role: '웹 개발자',
-    period: '2021.07 — 2023.02',
+    company: '㈜비스톤스',
+    role: '대리',
+    period: '2022.08 — 2023.09 · 1년 2개월',
     description: [
-      '다수의 기업 웹사이트 퍼블리싱 및 프론트엔드 개발',
-      'Vue.js 도입으로 반복 작업 자동화',
-      'CMS 연동 및 SEO 최적화 작업',
+      '프론트엔드 개발 업무 수행',
+    ],
+  },
+  {
+    company: '㈜디온컴즈',
+    role: '사원',
+    period: '2020.10 — 2022.05 · 1년 8개월',
+    description: [
+      '프론트엔드 개발 업무 수행',
     ],
   },
 ];
