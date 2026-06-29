@@ -1,13 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Mail, GitBranch, Link2, ExternalLink, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
-
-const socialLinks = [
-  { icon: GitBranch, label: 'GitHub', href: personalInfo.github },
-  { icon: Link2, label: 'LinkedIn', href: personalInfo.linkedin },
-  { icon: ExternalLink, label: 'Blog', href: personalInfo.blog },
-];
 
 export default function Contact() {
   const ref = useRef(null);
@@ -58,23 +52,6 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="card">
-              <p className="text-xs text-gray-500 mb-4">소셜 미디어</p>
-              <div className="flex gap-4">
-                {socialLinks.map(({ icon: Icon, label, href }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="w-9 h-9 rounded-lg bg-dark-600 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary/10 transition-all"
-                  >
-                    <Icon size={16} />
-                  </a>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* 폼 */}

@@ -6,9 +6,6 @@ export const personalInfo = {
   description:
     '웹디자인부터 퍼블리싱, 프론트엔드 개발까지 약 6년간 다양한 프로젝트를 경험했습니다. 현재는 React · TypeScript를 중심으로 웹 · 앱 서비스를 개발하고 있습니다.',
   email: 'show2585@gmail.com',
-  github: 'https://github.com/show2585-cmd',
-  linkedin: 'https://linkedin.com',
-  blog: 'https://blog.example.com',
   location: '서울, 대한민국',
   available: true,
 };

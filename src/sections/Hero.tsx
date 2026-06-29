@@ -1,5 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
-import { ArrowDown, GitBranch, Link2, Mail, ExternalLink } from 'lucide-react';
+import { ArrowDown, Mail } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
 const container: Variants = {
@@ -76,33 +76,6 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={item} className="flex items-center gap-5">
-            <a
-              href={personalInfo.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-              aria-label="GitHub"
-            >
-              <GitBranch size={20} />
-            </a>
-            <a
-              href={personalInfo.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Link2 size={20} />
-            </a>
-            <a
-              href={personalInfo.blog}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-primary transition-colors"
-              aria-label="Blog"
-            >
-              <ExternalLink size={20} />
-            </a>
             <a
               href={`mailto:${personalInfo.email}`}
               className="text-gray-500 hover:text-primary transition-colors"
