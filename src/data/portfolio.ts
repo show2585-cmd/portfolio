@@ -96,7 +96,7 @@ export const experiences = [
     role: '대리',
     period: '2023.11 — 2026.06 · 2년 8개월',
     description: [
-      '프론트엔드 개발 업무 수행',
+      'React · React Native · TypeScript · PHP · MySQL · HTML · CSS · JavaScript · jQuery',
     ],
   },
   {
@@ -104,8 +104,7 @@ export const experiences = [
     role: '대리',
     period: '2022.08 — 2023.09 · 1년 2개월',
     description: [
-      '웹 퍼블리싱 담당',
-      '삼성 공식 페이지 제작 및 운영 (언팩 · 기획전 담당)',
+      'HTML · SCSS · JavaScript · Gulp',
     ],
   },
   {
@@ -113,10 +112,7 @@ export const experiences = [
     role: '사원',
     period: '2020.10 — 2022.05 · 1년 8개월',
     description: [
-      '웹디자인 및 퍼블리싱',
-      '농업온 페이지 제작 및 운영',
-      '산기평 페이지 제작 및 운영',
-      '농식품부 사이트 유지보수',
+      'Photoshop · Adobe XD · HTML · CSS · JavaScript · jQuery',
     ],
   },
 ];
