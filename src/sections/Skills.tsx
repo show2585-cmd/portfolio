@@ -43,7 +43,7 @@ export default function Skills() {
           <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-12" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
           {skills.map((group, gi) => (
             <motion.div
               key={group.category}

@@ -38,6 +38,15 @@ export const skills = [
       { name: 'Gulp / Vite', level: 75 },
     ],
   },
+  {
+    category: 'AI & Automation',
+    items: [
+      { name: 'MCP 기반 AI 서비스 연동', level: 85 },
+      { name: 'AI Agent 구축', level: 80 },
+      { name: '워크플로우 자동화', level: 80 },
+      { name: 'Figma Plugin 개발', level: 75 },
+    ],
+  },
 ];
 
 export const projects = [
