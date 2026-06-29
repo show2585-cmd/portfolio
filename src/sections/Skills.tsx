@@ -5,9 +5,8 @@ import {
   SiSass, SiTailwindcss, SiGreensock, SiFramer,
   SiFigma, SiGit, SiGulp, SiVite,
 } from 'react-icons/si';
-import { Palette, PenTool } from 'lucide-react';
-import { Bot, Workflow, Cpu, Puzzle } from 'lucide-react';
-import { skills } from '../data/portfolio';
+import { Palette, PenTool, Puzzle } from 'lucide-react';
+import { skills, aiCapabilities } from '../data/portfolio';
 
 type IconEntry = {
   icon: React.ElementType;
@@ -15,26 +14,22 @@ type IconEntry = {
 };
 
 const iconMap: Record<string, IconEntry> = {
-  'HTML5':                    { icon: SiHtml5,           color: '#E34F26' },
-  'CSS3':                     { icon: SiCss,             color: '#1572B6' },
-  'JavaScript':               { icon: SiJavascript,      color: '#F7DF1E' },
-  'TypeScript':               { icon: SiTypescript,      color: '#3178C6' },
-  'React':                    { icon: SiReact,           color: '#61DAFB' },
-  'React Native':             { icon: SiReact,           color: '#61DAFB' },
-  'SCSS':                     { icon: SiSass,            color: '#CC6699' },
-  'Tailwind CSS':             { icon: SiTailwindcss,     color: '#06B6D4' },
-  'GSAP':                     { icon: SiGreensock,       color: '#88CE02' },
-  'Framer Motion':            { icon: SiFramer,          color: '#0055FF' },
-  'Photoshop':                { icon: Palette,           color: '#31A8FF' },
-  'Adobe XD':                 { icon: PenTool,           color: '#FF61F6' },
-  'Figma':                    { icon: SiFigma,           color: '#F24E1E' },
-  'Git':                      { icon: SiGit,             color: '#F05032' },
-  'Gulp':                     { icon: SiGulp,            color: '#CF4647' },
-  'Vite':                     { icon: SiVite,            color: '#646CFF' },
-  'AI Service Integration':   { icon: Cpu,               color: '#22D3EE' },
-  'AI Agent':                 { icon: Bot,               color: '#A78BFA' },
-  'Workflow Automation':      { icon: Workflow,           color: '#34D399' },
-  'Figma Plugin':             { icon: Puzzle,            color: '#F24E1E' },
+  'HTML5':         { icon: SiHtml5,       color: '#E34F26' },
+  'CSS3':          { icon: SiCss,         color: '#1572B6' },
+  'JavaScript':    { icon: SiJavascript,  color: '#F7DF1E' },
+  'TypeScript':    { icon: SiTypescript,  color: '#3178C6' },
+  'React':         { icon: SiReact,       color: '#61DAFB' },
+  'React Native':  { icon: SiReact,       color: '#61DAFB' },
+  'SCSS':          { icon: SiSass,        color: '#CC6699' },
+  'Tailwind CSS':  { icon: SiTailwindcss, color: '#06B6D4' },
+  'GSAP':          { icon: SiGreensock,   color: '#88CE02' },
+  'Framer Motion': { icon: SiFramer,      color: '#0055FF' },
+  'Photoshop':     { icon: Palette,       color: '#31A8FF' },
+  'Adobe XD':      { icon: PenTool,       color: '#FF61F6' },
+  'Figma':         { icon: SiFigma,       color: '#F24E1E' },
+  'Git':           { icon: SiGit,         color: '#F05032' },
+  'Gulp':          { icon: SiGulp,        color: '#CF4647' },
+  'Vite':          { icon: SiVite,        color: '#646CFF' },
 };
 
 function SkillChip({ name, delay }: { name: string; delay: number }) {
@@ -76,7 +71,8 @@ export default function Skills() {
           <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-12" />
         </motion.div>
 
-        <div className="space-y-10">
+        {/* 기술 아이콘 칩 */}
+        <div className="space-y-10 mb-16">
           {skills.map((group, gi) => (
             <motion.div
               key={group.category}
@@ -95,6 +91,45 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
+
+        {/* AI & Automation */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">
+            AI & Automation
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            {aiCapabilities.map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.45 + i * 0.1 }}
+                className="card group"
+              >
+                <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Puzzle size={16} className="text-primary" />
+                </div>
+                <h4 className="text-sm font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors">
+                  {item.title}
+                </h4>
+                <p className="text-gray-500 text-xs leading-relaxed mb-4">
+                  {item.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="tag text-[10px] px-2 py-0.5">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -23,10 +23,6 @@ export const skills = [
     category: 'Tools & Design',
     items: ['Photoshop', 'Adobe XD', 'Figma', 'Git', 'Gulp', 'Vite'],
   },
-  {
-    category: 'AI & Automation',
-    items: ['AI Service Integration', 'AI Agent', 'Workflow Automation', 'Figma Plugin'],
-  },
 ];
 
 export const projects = [
@@ -73,6 +69,24 @@ export const projects = [
     demo: 'https://demo.example.com',
     image: null,
     featured: false,
+  },
+];
+
+export const aiCapabilities = [
+  {
+    title: '이미지 자동 저장 플러그인',
+    description: '퍼블리셔 작업 흐름에 맞춰 Figma 내 이미지를 규칙에 따라 자동으로 저장·추출하는 플러그인 개발. 반복 수작업을 제거해 작업 시간 단축.',
+    tags: ['Figma Plugin', 'TypeScript', '업무 자동화'],
+  },
+  {
+    title: '매뉴얼 화면 이미지 넘버링 반자동화',
+    description: '매뉴얼 제작 시 필요한 화면 캡처 이미지에 순번을 자동으로 부여하는 Figma 플러그인 개발. 디자이너·퍼블리셔 간 협업 프로세스 개선.',
+    tags: ['Figma Plugin', 'TypeScript', '디자인-개발 협업'],
+  },
+  {
+    title: 'MCP 기반 AI 서비스 연동',
+    description: 'MCP(Model Context Protocol) 시스템을 활용한 AI 서비스 연계 및 업무 자동화 워크플로우 구축.',
+    tags: ['MCP', 'AI Integration', 'Workflow'],
   },
 ];
 
