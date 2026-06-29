@@ -14,28 +14,28 @@ export const skills = [
   {
     category: 'Frontend',
     items: [
-      { name: 'React', level: 90 },
-      { name: 'TypeScript', level: 85 },
-      { name: 'Next.js', level: 80 },
-      { name: 'Vue.js', level: 70 },
+      { name: 'HTML / CSS', level: 95 },
+      { name: 'JavaScript', level: 90 },
+      { name: 'TypeScript', level: 80 },
+      { name: 'React / React Native', level: 85 },
     ],
   },
   {
-    category: 'Styling',
+    category: 'Styling & Animation',
     items: [
-      { name: 'Tailwind CSS', level: 90 },
-      { name: 'Styled Components', level: 85 },
-      { name: 'SCSS/SASS', level: 80 },
-      { name: 'Framer Motion', level: 75 },
+      { name: 'SCSS', level: 90 },
+      { name: 'Tailwind CSS', level: 85 },
+      { name: 'GSAP', level: 75 },
+      { name: 'Framer Motion', level: 70 },
     ],
   },
   {
-    category: 'Tools & Others',
+    category: 'Tools & Design',
     items: [
-      { name: 'Git/GitHub', level: 85 },
-      { name: 'Webpack/Vite', level: 75 },
-      { name: 'Jest/Testing', level: 70 },
-      { name: 'Figma', level: 65 },
+      { name: 'Photoshop', level: 85 },
+      { name: 'Adobe XD', level: 80 },
+      { name: 'Git', level: 80 },
+      { name: 'Gulp / Vite', level: 75 },
     ],
   },
 ];
