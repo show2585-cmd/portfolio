@@ -6,7 +6,7 @@ import {
   SiFigma, SiGit, SiGulp, SiVite,
   SiPhp, SiMysql,
 } from 'react-icons/si';
-import { Palette, PenTool, Puzzle } from 'lucide-react';
+import { Palette, PenTool, Puzzle, Layers, BookOpen, Accessibility } from 'lucide-react';
 import { skills, aiCapabilities } from '../data/portfolio';
 
 type IconEntry = {
@@ -32,6 +32,9 @@ const iconMap: Record<string, IconEntry> = {
   'Vite':          { icon: SiVite,        color: '#646CFF' },
   'PHP':           { icon: SiPhp,         color: '#777BB4' },
   'MySQL':         { icon: SiMysql,       color: '#4479A1' },
+  'FSD Architecture':    { icon: Layers,       color: '#818CF8' },
+  '디자인 컴포넌트 가이드': { icon: BookOpen,     color: '#F97316' },
+  '웹접근성 심사':        { icon: Accessibility, color: '#22C55E' },
 };
 
 function SkillChip({ name, delay }: { name: string; delay: number }) {

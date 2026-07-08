@@ -27,6 +27,10 @@ export const skills = [
     category: 'Tools & Design',
     items: ['Figma', 'Git', 'Gulp', 'Vite'],
   },
+  {
+    category: 'Architecture & Practice',
+    items: ['FSD Architecture', '디자인 컴포넌트 가이드', '웹접근성 심사'],
+  },
 ];
 
 export const projects = [
@@ -36,7 +40,7 @@ export const projects = [
     description: '드로잉 키오스크 및 웹페이지 제작',
     client: '현대자동차그룹',
     category: 'kiosk',
-    tags: ['React', 'TypeScript'],
+    tags: ['React', 'TypeScript', 'Php', 'Mysql'],
     image: '/images/hyundai-robotics.webp',
   },
   {
@@ -54,7 +58,7 @@ export const projects = [
     description: '스크린 사격 체험 앱 및 팝업스토어 웹페이지 제작.',
     client: '발로란트',
     category: 'kiosk',
-    tags: ['React', 'TypeScript'],
+    tags: ['React', 'TypeScript', 'Php', 'Mysql'],
     image: '/images/valorant-popup.webp',
   },
   {
@@ -72,7 +76,7 @@ export const projects = [
     description: '바람개비의 회전수를 활용한 게임 키오스크 제작.',
     client: '사노피',
     category: 'kiosk',
-    tags: ['React', 'TypeScript'],
+    tags: ['React', 'TypeScript', 'Php', 'Mysql'],
     image: '/images/sanofi-kiosk.jpg',
   },
   {
@@ -81,7 +85,7 @@ export const projects = [
     description: '감정분석 키오스크 제작 및 뇌파의 집중력을 활용한 게임 제작.',
     client: '한국우편사업진흥원',
     category: 'kiosk',
-    tags: ['React', 'TypeScript'],
+    tags: ['React', 'TypeScript', 'Php', 'Mysql'],
     image: '/images/fila-kiosk.webp',
   },
   {
@@ -90,13 +94,13 @@ export const projects = [
     description: '감정분석 키오스크 제작.',
     client: '코리아그랜드세일',
     category: 'kiosk',
-    tags: ['React Native'],
+    tags: ['React Native', 'Php', 'Mysql'],
     image: '/images/korea-grand-sale.webp',
   },
   {
     id: 8,
-    title: 'DB김준기문화재단 홈페이지 리뉴얼',
-    description: '홈페이지 제작.',
+    title: 'DB김준기문화재단 홈페이지 리뉴얼 퍼블리싱',
+    description: '홈페이지 퍼블리싱',
     client: 'DB김준기문화재단',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -105,7 +109,7 @@ export const projects = [
   {
     id: 9,
     title: '알보젠 홈페이지 리뉴얼',
-    description: '홈페이지 제작.',
+    description: '홈페이지 퍼블리싱',
     client: '알보젠',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -114,7 +118,7 @@ export const projects = [
   {
     id: 10,
     title: '농업온 홈페이지',
-    description: '홈페이지 제작 및 운영.',
+    description: '홈페이지 퍼블리싱',
     client: '농식품부',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
@@ -123,7 +127,7 @@ export const projects = [
   {
     id: 11,
     title: '산기평 홈페이지',
-    description: '홈페이지 제작 및 운영.',
+    description: '홈페이지 퍼블리싱',
     client: '산업기술평가관리원',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
@@ -132,7 +136,7 @@ export const projects = [
   {
     id: 12,
     title: '농식품부 홈페이지 유지보수',
-    description: '홈페이지 유지보수.',
+    description: '홈페이지 퍼블리싱.',
     client: '농식품부',
     category: 'web',
     tags: ['HTML', 'CSS', 'JavaScript'],
