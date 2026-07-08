@@ -25,7 +25,7 @@ export const skills = [
   },
   {
     category: 'Tools & Design',
-    items: ['Photoshop', 'Adobe XD', 'Figma', 'Git', 'Gulp', 'Vite'],
+    items: ['Figma', 'Git', 'Gulp', 'Vite'],
   },
 ];
 

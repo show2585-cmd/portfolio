@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { MapPin, Calendar, Coffee } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
 const facts = [
   { icon: MapPin, label: '위치', value: personalInfo.location },
-  { icon: Calendar, label: '경력', value: '약 6년 · 웹디자인 · 퍼블리싱 · 프론트엔드' },
-  { icon: Coffee, label: '현재 직책', value: '대리' },
+  { icon: Calendar, label: '경력', value: '약 6년 · 퍼블리싱 · 프론트엔드' },
+  // { icon: Coffee, label: '현재 직책', value: '대리' },
 ];
 
 export default function About() {
@@ -73,14 +73,14 @@ export default function About() {
               </div>
             ))}
 
-            <div className="card">
+            {/* <div className="card">
               <p className="text-xs text-gray-500 mb-3">주요 기술 스택</p>
               <div className="flex flex-wrap gap-2">
                 {['React', 'TypeScript', 'React Native', 'JavaScript', 'HTML/CSS', 'SCSS'].map((tech) => (
                   <span key={tech} className="tag">{tech}</span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
