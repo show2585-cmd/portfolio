@@ -5,7 +5,7 @@ export const personalInfo = {
   tagline: '디자인 감각을 갖춘 프론트엔드 개발자',
   description:
     '웹디자인부터 퍼블리싱, 프론트엔드 개발까지 약 6년간 다양한 프로젝트를 경험했습니다. 현재는 React · TypeScript를 중심으로 웹 · 앱 서비스를 개발하고 있습니다.',
-  email: 'show2585@gmail.com',
+  email: 'kimwh2585@naver.com',
   location: '서울, 대한민국',
   available: true,
 };
@@ -24,12 +24,12 @@ export const skills = [
     items: ['SCSS', 'Tailwind CSS', 'GSAP'],
   },
   {
-    category: 'Tools & Design',
-    items: ['Figma', 'Git', 'Gulp', 'Vite'],
+    category: 'UI Library',
+    items: ['shadcn/ui', 'Material UI'],
   },
   {
-    category: 'Architecture & Practice',
-    items: ['FSD Architecture', '디자인 컴포넌트 가이드', '웹접근성 심사'],
+    category: 'Tools & Design',
+    items: ['Figma', 'Git', 'Gulp', 'Vite'],
   },
 ];
 
@@ -148,17 +148,29 @@ export const aiCapabilities = [
   {
     title: '이미지 자동 저장 플러그인',
     description: '퍼블리셔 작업 흐름에 맞춰 Figma 내 이미지를 규칙에 따라 자동으로 저장·추출하는 플러그인 개발. 반복 수작업을 제거해 작업 시간 단축.',
-    tags: ['Figma Plugin', 'TypeScript', '업무 자동화'],
   },
   {
     title: '매뉴얼 화면 이미지 넘버링 반자동화',
     description: '매뉴얼 제작 시 필요한 화면 캡처 이미지에 순번을 자동으로 부여하는 Figma 플러그인 개발. 디자이너·퍼블리셔 간 협업 프로세스 개선.',
-    tags: ['Figma Plugin', 'TypeScript', '디자인-개발 협업'],
   },
   {
     title: 'MCP 기반 AI 서비스 연동',
     description: 'MCP(Model Context Protocol) 시스템을 활용한 AI 서비스 연계 및 업무 자동화 워크플로우 구축.',
-    tags: ['MCP', 'AI Integration', 'Workflow'],
+  },
+];
+
+export const uxImprovements = [
+  {
+    title: 'FSD 아키텍처 도입으로 유지보수성 개선',
+    description: '기능별로 뒤섞여 있던 폴더 구조를 FSD(Feature-Sliced Design)로 재구성해 컴포넌트 재사용성과 협업 효율을 높이고, 신규 기능 추가 시 영향 범위를 최소화.',
+  },
+  {
+    title: '디자인 컴포넌트 가이드로 UI 일관성 확보',
+    description: '디자이너·퍼블리셔 간 제각각이던 색상·간격·컴포넌트 스펙을 하나의 가이드로 정리해 화면 간 UI 편차를 줄이고 협업 커뮤니케이션 비용을 절감.',
+  },
+  {
+    title: '웹접근성 심사 반영으로 사용자 접근성 개선',
+    description: '색상 대비, 키보드 포커스 순서, alt 텍스트, ARIA 속성 등 접근성 심사 항목을 점검·수정해 스크린리더 및 키보드 사용자의 이용 편의성을 개선.',
   },
 ];
 

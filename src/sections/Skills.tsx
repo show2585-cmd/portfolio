@@ -5,9 +5,10 @@ import {
   SiSass, SiTailwindcss, SiGreensock,
   SiFigma, SiGit, SiGulp, SiVite,
   SiPhp, SiMysql,
+  SiShadcnui, SiMui,
 } from 'react-icons/si';
-import { Palette, PenTool, Puzzle, Layers, BookOpen, Accessibility } from 'lucide-react';
-import { skills, aiCapabilities } from '../data/portfolio';
+import { Palette, PenTool, Puzzle, Layers, BookOpen, Accessibility, Sparkles } from 'lucide-react';
+import { skills, aiCapabilities, uxImprovements } from '../data/portfolio';
 
 type IconEntry = {
   icon: React.ElementType;
@@ -32,6 +33,8 @@ const iconMap: Record<string, IconEntry> = {
   'Vite':          { icon: SiVite,        color: '#646CFF' },
   'PHP':           { icon: SiPhp,         color: '#777BB4' },
   'MySQL':         { icon: SiMysql,       color: '#4479A1' },
+  'shadcn/ui':     { icon: SiShadcnui,    color: '#FAFAFA' },
+  'Material UI':   { icon: SiMui,         color: '#007FFF' },
   'FSD Architecture':    { icon: Layers,       color: '#818CF8' },
   '디자인 컴포넌트 가이드': { icon: BookOpen,     color: '#F97316' },
   '웹접근성 심사':        { icon: Accessibility, color: '#22C55E' },
@@ -121,16 +124,42 @@ export default function Skills() {
                 <h4 className="text-sm font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors">
                   {item.title}
                 </h4>
-                <p className="text-gray-500 text-xs leading-relaxed mb-4">
+                <p className="text-gray-500 text-xs leading-relaxed">
                   {item.description}
                 </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {item.tags.map((tag) => (
-                    <span key={tag} className="tag text-[10px] px-2 py-0.5">
-                      {tag}
-                    </span>
-                  ))}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* UI/UX 개선 사례 */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-10"
+        >
+          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">
+            UI/UX 개선 사례
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            {uxImprovements.map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.55 + i * 0.1 }}
+                className="card group"
+              >
+                <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Sparkles size={16} className="text-primary" />
                 </div>
+                <h4 className="text-sm font-bold text-gray-100 mb-2 group-hover:text-primary transition-colors">
+                  {item.title}
+                </h4>
+                <p className="text-gray-500 text-xs leading-relaxed">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>

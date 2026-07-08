@@ -41,10 +41,6 @@ export default function Hero() {
             </motion.div>
           )}
 
-          <motion.p variants={item} className="font-mono text-primary text-sm md:text-base mb-4">
-            웹디자인부터 프론트엔드 개발까지, 약 6년차
-          </motion.p>
-
           <motion.h1
             variants={item}
             className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4"
