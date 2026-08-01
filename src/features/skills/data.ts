@@ -13,6 +13,10 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    title: 'Backend Development',
+    items: ['PHP 기반 API 개발', 'MySQL 데이터베이스 설계 및 관리'],
+  },
+  {
     title: 'State & Form Management',
     items: [
       'Redux를 활용한 전역 상태 관리',

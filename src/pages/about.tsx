@@ -1,5 +1,6 @@
 import {
   Code2,
+  Server,
   ListChecks,
   Palette,
   Gauge,
@@ -13,6 +14,7 @@ import { skillCategories } from '@/features/skills/data'
 
 const categoryIcons: Record<string, LucideIcon> = {
   'Frontend Development': Code2,
+  'Backend Development': Server,
   'State & Form Management': ListChecks,
   'UI / Design System': Palette,
   'Web Quality & Optimization': Gauge,
