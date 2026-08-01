@@ -11,12 +11,7 @@ export const experiences: Experience[] = [
         client: 'HSAD',
         contribution: '100%',
         description: 'React Native 기반 화담숲 모바일 애플리케이션 UI를 개발했습니다.',
-        responsibilities: [
-          'UI 개발',
-          '컴포넌트 개발',
-          'API 연동',
-          '앱 화면 최적화',
-        ],
+        responsibilities: ['UI 개발', '컴포넌트 개발', '앱 화면 최적화'],
         stack: ['React Native', 'TypeScript'],
       },
       {
