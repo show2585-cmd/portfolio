@@ -98,7 +98,7 @@ export const experiences: Experience[] = [
       {
         title: '현대 모터스튜디오 퍼블리싱',
         type: 'WEB',
-        client: '현대자동차',
+        client: '아스템즈',
         contribution: '100%',
         description: '현대 모터스튜디오 홈페이지 퍼블리싱 프로젝트를 진행했습니다.',
         responsibilities: ['홈페이지 퍼블리싱', '반응형 웹 구현', '크로스 브라우징'],
