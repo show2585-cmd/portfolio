@@ -27,7 +27,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <NavLink to="/" className="font-semibold tracking-tight">
-          {siteConfig.name}
+          Kwh
         </NavLink>
 
         <div className="hidden items-center gap-1 sm:flex">
@@ -59,7 +59,7 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <SheetHeader>
-                <SheetTitle>{siteConfig.name}</SheetTitle>
+                <SheetTitle>Kwh</SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-1 px-4">
                 {navItems.map((item) => (
