@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t py-8">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-2 px-6 text-sm text-muted-foreground sm:flex-row sm:justify-between">
         <p>
-          &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
+          &copy; {new Date().getFullYear()} Kwh. All rights
           reserved.
         </p>
         <div className="flex gap-4">
