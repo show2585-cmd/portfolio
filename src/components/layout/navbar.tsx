@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { siteConfig } from '@/lib/site-config'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
