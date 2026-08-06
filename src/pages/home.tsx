@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import confetti from 'canvas-confetti'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { siteConfig } from '@/lib/site-config'
@@ -6,6 +8,23 @@ import { skillCategories } from '@/features/skills/data'
 
 export default function Home() {
   const highlightSkills = skillCategories[0].items.slice(0, 4)
+  const awardBadgeRef = useRef<HTMLSpanElement>(null)
+
+  useEffect(() => {
+    const el = awardBadgeRef.current
+    if (!el) return
+
+    const rect = el.getBoundingClientRect()
+    confetti({
+      particleCount: 80,
+      spread: 70,
+      startVelocity: 35,
+      origin: {
+        x: (rect.left + rect.width / 2) / window.innerWidth,
+        y: (rect.top + rect.height / 2) / window.innerHeight,
+      },
+    })
+  }, [])
 
   return (
     <section className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-24 text-center">
@@ -17,6 +36,13 @@ export default function Home() {
         {siteConfig.tagline}
       </p>
       <p className="max-w-2xl text-muted-foreground">{siteConfig.summary}</p>
+      <Badge
+        ref={awardBadgeRef}
+        variant="outline"
+        className="h-auto py-2 text-sm"
+      >
+        🏆 우수사원상 2회 수상
+      </Badge>
       <div className="flex flex-wrap justify-center gap-2">
         {highlightSkills.map((skill) => (
           <Badge key={skill} variant="outline">

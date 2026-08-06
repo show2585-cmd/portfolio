@@ -19,6 +19,15 @@ export interface Experience {
   projects: Project[]
 }
 
+export interface SideProject {
+  title: string
+  period: string
+  description: string
+  features: string[]
+  stack: string[]
+  image?: string
+}
+
 export interface AgentBoundary {
   always: string[]
   confirm: string[]

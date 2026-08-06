@@ -5,6 +5,7 @@ import { useSyncTheme } from '@/hooks/use-sync-theme'
 import Home from '@/pages/home'
 import About from '@/pages/about'
 import Projects from '@/pages/projects'
+import SideProjects from '@/pages/side-projects'
 import Agents from '@/pages/agents'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/side-projects" element={<SideProjects />} />
           <Route path="/agents" element={<Agents />} />
         </Routes>
       </main>
