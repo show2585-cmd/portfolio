@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
-import { Navbar } from '@/components/layout/navbar'
-import { Footer } from '@/components/layout/footer'
+import { Navbar } from '@/shared/layout/navbar'
+import { Footer } from '@/shared/layout/footer'
 import { useSyncTheme } from '@/hooks/use-sync-theme'
 import Home from '@/pages/home'
 import About from '@/pages/about'

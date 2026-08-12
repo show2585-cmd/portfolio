@@ -8,7 +8,7 @@ import {
   RefreshCw,
   type LucideIcon,
 } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/shared/ui/card'
 import { siteConfig } from '@/lib/site-config'
 import { skillCategories } from '@/features/skills/data'
 

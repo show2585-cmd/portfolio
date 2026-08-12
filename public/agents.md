@@ -19,7 +19,7 @@
 - **스타일링:** Tailwind CSS 3.x, CSS Modules
 - **ui라이브러리:** shadcn
 - **파일 구조:**
-  - `src/components/` — 재사용 가능한 UI 컴포넌트
+  - `src/shared/` — 재사용 가능한 UI 컴포넌트
   - `src/features/` — 기능별 모듈 (컴포넌트, 훅, 유틸리티)
   - `src/hooks/` — 커스텀 React 훅
   - `src/utils/` — 유틸리티 함수
@@ -262,7 +262,7 @@ describe('useUserData', () => {
 ## 사용법
 
 \`\`\`typescript
-import { UserProfile } from '@/components/UserProfile';
+import { UserProfile } from '@/shared/UserProfile';
 
 function App() {
   return <UserProfile userId="123" showBio={true} />;

@@ -4,9 +4,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
+} from '@/shared/ui/card'
+import { Badge } from '@/shared/ui/badge'
+import { Separator } from '@/shared/ui/separator'
 import { experiences } from '@/features/projects/data'
 
 export default function Projects() {

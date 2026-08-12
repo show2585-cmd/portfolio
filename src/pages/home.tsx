@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import confetti from 'canvas-confetti'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
+import { Button } from '@/shared/ui/button'
+import { Badge } from '@/shared/ui/badge'
 import { siteConfig } from '@/lib/site-config'
 import { skillCategories } from '@/features/skills/data'
 

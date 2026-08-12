@@ -2,15 +2,15 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/shared/theme-toggle'
+import { Button } from '@/shared/ui/button'
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@/shared/ui/sheet'
 
 const navItems = [
   { to: '/', label: 'Home' },
