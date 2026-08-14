@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
         stack: ['React', 'TypeScript', 'PHP', 'MySQL'],
       },
       {
-        title: '사노피 키오스크',
+        title: '사노피',
         type: 'KIOSK',
         client: '사노피',
         contribution: '100%',
@@ -39,22 +39,21 @@ export const experiences: Experience[] = [
         stack: ['React', 'TypeScript', 'PHP', 'MySQL'],
       },
       {
-        title: 'FILA KOREA 키오스크',
+        title: '필라코리아 세계우표전시회',
         type: 'KIOSK',
         client: '한국우편사업진흥원',
         contribution: '100%',
         description:
           '감정 분석과 EEG(뇌파) 데이터를 활용한 체험형 키오스크를 개발했습니다.',
         responsibilities: [
-          'React 기반 UI 개발',
           '감정 분석 결과 시각화',
-          '게임 콘텐츠 개발',
+          '뇌파집중도에 따라 게임 로직 개발',
           '관리자 기능 개발',
         ],
-        stack: ['React', 'TypeScript', 'PHP', 'MySQL'],
+        stack: ['React', 'React-Native', 'TypeScript', 'PHP', 'MySQL'],
       },
       {
-        title: '코리아그랜드세일 키오스크',
+        title: '코리아그랜드세일',
         type: 'KIOSK',
         client: '코리아그랜드세일',
         contribution: '100%',
