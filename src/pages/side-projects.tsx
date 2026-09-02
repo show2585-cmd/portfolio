@@ -13,7 +13,7 @@ export default function SideProjects() {
     <section className="mx-auto max-w-5xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight">Side Projects</h1>
       <p className="mt-4 max-w-3xl text-muted-foreground">
-        바이브 코딩으로 진행한 사이드 프로젝트를 소개합니다.
+        바이브 코딩/개인 공부용으로 진행한 사이드 프로젝트를 소개합니다.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
