@@ -26,6 +26,7 @@ export interface SideProject {
   features: string[]
   stack: string[]
   image?: string
+  link?: string
 }
 
 export interface AgentBoundary {

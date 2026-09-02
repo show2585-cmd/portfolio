@@ -23,4 +23,21 @@ export const sideProjects: SideProject[] = [
     stack: ['Python', 'OKX REST API'],
     image: '/side-projects/okx_img.png',
   },
+{
+  title: '호텔트립 (Supabase + React)',
+  period: '2026.08',
+  description:
+    'Supabase를 백엔드로 사용해 인증과 호텔 예약 데이터를 CRUD하는 React 웹 애플리케이션입니다. FSD(Feature-Sliced Design) 구조로 설계했으며, 이메일·카카오 소셜 로그인 지원합니다.',
+  features: [
+    'Supabase Auth 기반 이메일 로그인 / 회원가입 및 호텔 검색(이름·지역) 및 무한 스크롤 목록 · 상세 조회',
+    '호텔 예약 생성과 마이페이지 예약 내역 조회',
+    '위시리스트(호텔 찜) 추가 / 삭제',
+    '배너 캐러셀(Swiper), 날짜 선택 캘린더, 카카오맵',
+    'Vercel 배포',
+  ],
+  stack: ['React', 'TypeScript', 'Vite', 'Supabase', 'Tailwind CSS', 'shadcn/ui', 'React Router', 'Vercel'],
+  image: '/side-projects/hotel_trip_img.png',
+  link: 'https://supase-react.vercel.app/',
+}
+
 ]

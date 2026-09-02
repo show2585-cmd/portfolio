@@ -48,6 +48,16 @@ export default function SideProjects() {
                   </Badge>
                 ))}
               </div>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-medium text-primary underline underline-offset-4"
+                >
+                  사이트 바로가기 →
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}
