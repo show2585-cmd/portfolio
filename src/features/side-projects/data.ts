@@ -2,6 +2,25 @@ import type { SideProject } from '@/types'
 
 export const sideProjects: SideProject[] = [
   {
+    title: '오감 브레인',
+    period: '2026.10',
+    description:
+      '펼쳐진 카드의 같은 과일이 정확히 5개가 되는 순간 종을 치는, AI와 겨루는 반응속도 두뇌게임입니다. 설치·회원가입 없이 PC와 모바일 브라우저에서 바로 플레이할 수 있는 카드 미니게임입니다.',
+    features: [
+      '쉬움 · 보통 · 어려움 난이도별 AI 반응속도 · 실수 확률 · 제한 시간 조절',
+      '0.01초 단위 반응속도 측정 및 평균 · 최고 반응속도 · 최대 콤보 결과 통계',
+      '진행에 따라 빨라지는 템포, 오답 시 카드 1장 패널티 등 게임 규칙 구현',
+      'Framer Motion 카드 애니메이션, Web Audio 효과음, 모바일 진동 피드백',
+      'PC · 모바일 반응형 UI',
+      'GA4 이벤트 수집',
+      'SEO 메타 태그',
+      'Vercel 배포',
+    ],
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'GA4', 'Vercel'],
+    image: '/side-projects/fivebrain_img.png',
+    link: 'https://fivebrain-game.vercel.app/',
+  },
+  {
     title: 'LongShort AI',
     period: '2026.10',
     description:

@@ -28,6 +28,16 @@ export default function Home() {
 
   return (
     <section className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-24 text-center">
+      <Badge
+        variant="outline"
+        className="h-auto gap-2 whitespace-normal py-1.5 text-sm"
+      >
+        <span className="relative flex size-2 shrink-0" aria-hidden="true">
+          <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+          <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
+        </span>
+        {siteConfig.availability}
+      </Badge>
       <Badge variant="secondary">{siteConfig.role}</Badge>
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
         {siteConfig.name}
