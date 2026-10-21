@@ -24,28 +24,36 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <NavLink to="/" className="font-semibold tracking-tight">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3.5">
+        <NavLink
+          to="/"
+          className="flex items-center gap-2 text-sm font-semibold tracking-tight"
+        >
+          <span className="flex size-7 items-center justify-center rounded-lg bg-foreground text-[0.7rem] font-bold text-background">
+            K
+          </span>
           Kwh
         </NavLink>
 
-        <div className="hidden items-center gap-1 sm:flex">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.to === '/'}
-              className={({ isActive }) =>
-                cn(
-                  'rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground',
-                  isActive && 'text-foreground',
-                )
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
+        <div className="hidden items-center gap-2 sm:flex">
+          <div className="flex items-center gap-0.5 rounded-full border bg-background/60 p-1">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === '/'}
+                className={({ isActive }) =>
+                  cn(
+                    'rounded-full px-3.5 py-1.5 text-[0.8rem] font-medium text-muted-foreground transition-colors hover:text-foreground',
+                    isActive && 'bg-foreground text-background hover:text-background',
+                  )
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
           <ThemeToggle />
         </div>
 

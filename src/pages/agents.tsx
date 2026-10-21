@@ -9,6 +9,7 @@ import {
 import { Badge } from '@/shared/ui/badge'
 import { Button } from '@/shared/ui/button'
 import { Separator } from '@/shared/ui/separator'
+import { PageHeader } from '@/shared/page-header'
 import { agents } from '@/features/agents/data'
 import { colorTokens, typographySamples } from '@/features/design/data'
 
@@ -35,25 +36,30 @@ const boundaryGroups = [
 
 export default function Agents() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-16">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <h1 className="text-3xl font-semibold tracking-tight">AI Agents</h1>
-          <p className="mt-4 max-w-3xl text-muted-foreground">
+    <section className="mx-auto max-w-5xl px-6 py-20 animate-in fade-in slide-in-from-bottom-2 duration-700 motion-reduce:animate-none">
+      <PageHeader
+        index="04"
+        eyebrow="AI Workflow"
+        title="AI Agents"
+        description={
+          <>
             React + Vite 프로젝트 개발을 위해 정의해둔 전문 AI 에이전트 페르소나입니다.
             각 에이전트는 역할과 지식, 그리고 지켜야 할 경계선을 갖고 협업합니다.
-          </p>
-        </div>
-        <Button
-          render={<a href="/agents.md" download="agents.md" />}
-          variant="outline"
-        >
-          <Download className="size-4" />
-          agents.md 다운로드
-        </Button>
-      </div>
+          </>
+        }
+        action={
+          <Button
+            render={<a href="/agents.md" download="agents.md" />}
+            variant="outline"
+            className="h-10 rounded-full px-5"
+          >
+            <Download className="size-4" />
+            agents.md 다운로드
+          </Button>
+        }
+      />
 
-      <div className="mt-10 grid gap-6">
+      <div className="mt-14 grid gap-6">
         {agents.map((agent) => (
           <Card key={agent.handle}>
             <CardHeader>
@@ -173,7 +179,7 @@ export default function Agents() {
         <CardHeader>
           <CardTitle className="text-base">Typography Rules</CardTitle>
           <CardDescription>
-            헤딩과 본문 모두 Geist Variable 한 서체만 사용
+            헤딩과 본문 모두 Geist + Pretendard 한 스택만 사용
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-3">

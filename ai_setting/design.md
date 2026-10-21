@@ -31,7 +31,7 @@
 
 ## 3. Typography Rules
 
-- **폰트 패밀리:** [Geist Variable](https://vercel.com/font) 단일 서체 (`@fontsource-variable/geist`). 헤딩(`--font-heading`)과 본문(`--font-sans`)에 같은 서체를 사용해 시각적 통일감을 줍니다.
+- **폰트 패밀리:** 라틴 문자는 [Geist Variable](https://vercel.com/font)(`@fontsource-variable/geist`), 한글은 [Pretendard Variable](https://github.com/orioncactus/pretendard)(`pretendard`, dynamic subset)로 폴백되는 하나의 스택. 헤딩(`--font-heading`)과 본문(`--font-sans`)에 같은 스택을 사용합니다. 한글 줄바꿈은 `word-break: keep-all`로 어절 단위를 유지합니다.
 - **계층 (실제 사용 스케일):**
 
 | 용도 | 클래스 | 굵기 |
@@ -69,7 +69,7 @@
 **Do**
 - 팔레트는 무채색을 유지하고, 색은 상태(성공/경고/위험) 전달에만 사용한다.
 - 깊이는 `box-shadow`가 아니라 `ring`/`border`로 표현한다.
-- 헤딩과 본문에 동일한 서체(Geist Variable)를 유지한다.
+- 헤딩과 본문에 동일한 서체 스택(Geist + Pretendard)을 유지한다.
 - 짧은 키워드/태그는 Badge, 문장형 설명은 리스트(`ul/li` + 불릿)로 구분한다.
 
 **Don't**
@@ -92,7 +92,7 @@
 이 포트폴리오 사이트의 DESIGN.md 규칙을 따라 작성해줘:
 - 색은 --background/--foreground/--card/--primary/--secondary/--muted/--destructive CSS 변수만 사용 (임의 hex 금지)
 - 깊이는 ring-foreground/10 또는 border만 사용, box-shadow 금지
-- 폰트는 Geist Variable 하나만 사용, 헤딩도 같은 서체
+- 폰트는 Geist + Pretendard 스택 하나만 사용, 헤딩도 같은 스택
 - 컨테이너는 max-w-5xl mx-auto px-6, 섹션 세로 여백은 py-16
 - 짧은 태그는 Badge(rounded-4xl), 문장형 설명은 ul/li 리스트로 구분
 - shadcn/ui(Base UI) 컴포넌트를 우선 사용하고, 없으면 위 토큰을 조합해 직접 작성

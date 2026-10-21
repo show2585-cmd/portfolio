@@ -2,12 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
+@import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
     --font-heading: var(--font-sans);
-    --font-sans: 'Geist Variable', sans-serif;
+    --font-sans: 'Geist Variable', 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -125,6 +126,33 @@
     @apply bg-background text-foreground;
     }
   html {
-    @apply font-sans;
+    @apply font-sans antialiased;
+    text-rendering: optimizeLegibility;
     }
+  body {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    }
+  h1, h2, h3 {
+    text-wrap: balance;
+    }
+  ::selection {
+    @apply bg-foreground text-background;
+    }
+}
+
+/* 히어로 배경용 은은한 그리드 — 가장자리로 갈수록 사라짐 */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 30%, transparent 100%);
+}
+
+/* 위에서 아래로 옅어지는 헤드라인 그라데이션 */
+@utility text-gradient {
+  background-image: linear-gradient(180deg, var(--foreground) 35%, color-mix(in oklch, var(--foreground) 50%, transparent));
+  background-clip: text;
+  color: transparent;
 }
