@@ -1,7 +1,5 @@
-import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
-import confetti from 'canvas-confetti'
 import { Button } from '@/shared/ui/button'
 import { siteConfig } from '@/lib/site-config'
 import { skillCategories } from '@/features/skills/data'
@@ -15,29 +13,11 @@ const projectCount = experiences.reduce(
 
 export default function Home() {
   const highlightSkills = skillCategories[0].items.slice(0, 4)
-  const awardRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const el = awardRef.current
-    if (!el) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-
-    const rect = el.getBoundingClientRect()
-    confetti({
-      particleCount: 80,
-      spread: 70,
-      startVelocity: 35,
-      origin: {
-        x: (rect.left + rect.width / 2) / window.innerWidth,
-        y: (rect.top + rect.height / 2) / window.innerHeight,
-      },
-    })
-  }, [])
 
   const stats = [
     { value: `${projectCount}+`, label: '실무 프로젝트' },
     { value: `${sideProjects.length}`, label: '사이드 프로젝트' },
-    { value: '2회', label: '우수사원상 수상', ref: awardRef },
+    { value: '2회', label: '우수사원상 수상' },
   ]
 
   return (
@@ -94,7 +74,7 @@ export default function Home() {
 
         <dl className="mt-20 grid w-full max-w-3xl grid-cols-3 divide-x border-y animate-in fade-in delay-700 duration-1000 fill-mode-both motion-reduce:animate-none">
           {stats.map((stat) => (
-            <div key={stat.label} ref={stat.ref} className="flex flex-col px-2 py-7">
+            <div key={stat.label} className="flex flex-col px-2 py-7">
               <dt className="text-xs text-muted-foreground sm:text-sm">
                 {stat.label}
               </dt>
